@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="DoyleyRSVP2.View.HomeView"
+            xmlns:local="clr-namespace:DoyleyRSVP2.View"
+            NavigationPage.HasBackButton="False"
+            Title="List of Events">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutClicked" />
+    </TabbedPage.ToolbarItems>
+
+    <local:AllEventsView Title="All Events" IconImageSource=""/>
+    <local:AttendingEventsView Title="Attending" IconImageSource=""/>
+    <local:HostingEventsView Title="Hosting" IconImageSource=""/>
+</TabbedPage>

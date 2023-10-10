@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DoyleyRSVP2.View.AddEventView"
+    Title="Add New Event">
+
+    <StackLayout Padding="16">
+        <Entry x:Name="HostNameEntry" Placeholder="Host Name"/>
+        <Entry x:Name="EventNameEntry" Placeholder="Event Name"/>
+        <Entry x:Name="AddressEntry" Placeholder="Address"/>
+        <Entry x:Name="MaxAttendeesEntry" Placeholder="Max Attendees"/>
+        <DatePicker x:Name="EventDatePicker"/>
+        <TimePicker x:Name="EventTimePicker"/>
+        <DatePicker x:Name="RsvpDatePicker"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button BackgroundColor="#3F51B5" Clicked="OnSaveClicked"
+                    CornerRadius="6" FontAttributes="Bold" Grid.Column="0" Grid.Row="0"
+                    Text="Save" TextColor="White"/>
+            <Button BackgroundColor="Tomato" Clicked="OnCancelClicked"
+                    CornerRadius="6" FontAttributes="Bold" Grid.Column="1" Grid.Row="0"
+                    Text="Cancel" TextColor="White" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
+

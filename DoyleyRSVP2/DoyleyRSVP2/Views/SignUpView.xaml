@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DoyleyRSVP2.View.SignUpView"
+    NavigationPage.HasNavigationBar="False" >
+
+    <StackLayout Padding="32" BackgroundColor="#3F51B5">
+        <Label Text="Sign Up"
+               FontAttributes="Bold"
+               FontSize="Title"
+               TextColor="#FFFFFF"
+               HorizontalOptions="CenterAndExpand" />
+
+        <Label Text="Create a new account"
+               FontSize="Small"
+               TextColor="#FFFFFF"
+               HorizontalOptions="CenterAndExpand" />
+
+        <Frame CornerRadius="8" VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Entry Placeholder="Name"
+                   x:Name="txtName"
+                   TextColor="#202020"
+                   PlaceholderColor="#AAA" />
+
+                <Entry Placeholder="Email"
+                   x:Name="txtEmail"
+                   Keyboard="Email"
+                   TextColor="#202020"
+                   PlaceholderColor="#AAA" />
+
+                <Entry Placeholder="Password"
+                   x:Name="txtPassword"
+                   IsPassword="True"
+                   TextColor="#202020"
+                   PlaceholderColor="#AAA" />
+
+                <Entry Placeholder="Confirm Password"
+                   x:Name="txtConfirmPassword"
+                   IsPassword="True"
+                   TextColor="#202020"
+                   PlaceholderColor="#AAA" />
+
+                <Entry Placeholder="Mobile number"
+                   x:Name="txtMobileNumber"
+                   TextColor="#202020"
+                   PlaceholderColor="#AAA" />
+
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Already have an account? " />
+                            <Span Text="Sign in Now!" TextColor="#3F51B5" >
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="OnSigninClicked"
+                                        NumberOfTapsRequired="1" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Frame>
+        <StackLayout Orientation="Horizontal" 
+                     HorizontalOptions="CenterAndExpand">
+            <Button Text="Save" 
+                    TextColor="#3F51B5"
+                    BackgroundColor="#FFF"
+                    WidthRequest="150"
+                    CornerRadius="4"
+                    Clicked="Save_Clicked" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
+
