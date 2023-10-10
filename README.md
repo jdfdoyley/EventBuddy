@@ -1,5 +1,3 @@
-**README:**
-
 # EventBuddy - Your Ultimate Event Management App
 
 EventBuddy is a versatile and intuitive mobile application designed to simplify event management and streamline the coordination of gatherings, meetings, and conferences. With EventBuddy, you can effortlessly create, organize, and manage events, while attendees can easily respond to invitations, access event details, and connect with hosts and fellow participants.
